@@ -1,0 +1,528 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* css reset end */
+
+
+/* * {
+    outline: 1px solid #000;
+} */
+
+.wrap {
+    margin: 0 auto;
+    width: 1920px;
+}
+
+/* header最上面 */
+
+.top {
+    background: #F6F6F8;
+    padding-left: 1337px;
+    font-family: Microsoft JhengHei UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.facebook {
+    background-image: url(../images/facebookIcon.png);
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-indent: 101%;
+    /* 首行縮排 */
+    overflow: hidden;
+    /* 隱藏超過範圍的文字 */
+    white-space: nowrap;
+    /* 不換行 */
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.horiline {
+    border: 0.5px solid #CCCCCC;
+    height: 10px;
+}
+
+.twitter {
+    background-image: url(../images/twitterIcon.png);
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-indent: 101%;
+    /* 首行縮排 */
+    overflow: hidden;
+    /* 隱藏超過範圍的文字 */
+    white-space: nowrap;
+    /* 不換行 */
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.top h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FB_text {
+    text-decoration: none;
+    color: #4267B2;
+    margin-right: 10px;
+}
+
+.twitter_text {
+    text-decoration: none;
+    color: #1DA1F2;
+}
+
+.FB_text:hover, .twitter_text:hover {
+    background: khaki;
+}
+
+.FB_text:active, .twitter_text:active {
+    background: palevioletred;;
+}
+
+
+/* header */
+
+
+.header {
+    /* margin-bottom: 30px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+.header h1 {
+    float: left;
+    /* 文繞圖 */
+}
+
+.header h1 a {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/homework-b5f67.appspot.com/o/hexschool-logo.png?alt=media&token=f70ed542-c2c2-4b2b-af5c-13ccacd26113);
+    width: 150px;
+    height: 36px;
+    display: block;
+    text-indent: 101%;
+    /* 首行縮排 */
+    overflow: hidden;
+    /* 隱藏超過範圍的文字 */
+    white-space: nowrap;
+    /* 不換行 */
+    background-repeat: no-repeat;
+}
+
+.active {
+    border-bottom: 4px solid #00CC99;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+    font-family: Microsoft JhengHei UI;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #00251A;
+    display: block;
+    padding: 10px 0;
+    font-family: Microsoft JhengHei UI;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.menu li a:hover {
+    background-color: papayawhip;
+    border-bottom: 4px solid #00CC99;
+}
+
+.menu li a:active {
+    background-color: palevioletred;
+}
+
+/* banner */
+
+.banner h1 a {
+    background-image: url(https://s3-alpha-sig.figma.com/img/aca4/ce44/91af2627ea834613b9315e1a2c78e746?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=O2~i9yGGxrEI5ll3SEarPA9j5WlkFE1WSyA4YF4gQeXCKfFJh4lytQWcrrJj8JIi5VozUiuqtldV-X1zKznT9QukolFhWmDWLOH2fypQX-oJsOuI~L9UqgXB~XdjvajUrV96REYHUBNhNb4dAxTCYi7o-yYlJepOt3ETRu8w0wwYy3M7Mdso0cui4IF93HX~JeWOG3jEMo7hyVQ-Zj-vUMTDMxd9Rcr4DPLHXaH51WqPT821IhFMTiKFpbzbKP0Pk1EtBux9OJZxSHrEXMJjBm8eZFLX9JkZGuwkwh0V3xqECoMHolY61sHu4oVHbdnPXgYkp0kcfAqTmW46creBIQ__);
+    /* width: 1920px; */
+    height: 346px;
+    display: block;
+    text-indent: 101%;
+    /* 首行縮排 */
+    overflow: hidden;
+    /* 隱藏超過範圍的文字 */
+    white-space: nowrap;
+    /* 不換行 */
+}
+
+.banner {
+    position: relative;
+}
+
+.banner p {
+    position: absolute;
+    z-index: 2;
+    left: 500px;
+    top: 140px;
+    font-family: Microsoft JhengHei UI;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+    text-align: left;
+}
+
+/* 課程介紹 */
+
+.course {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-inner {
+    display: flex;
+    justify-content: space-between;
+    /* width: 1000px; */
+    padding: 0 400px;
+}
+
+.card-inner li {
+    width: 50%;
+    box-shadow: 0px 2px 4px 0px #00000029;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-inner h4 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.card-inner p {
+    font-family: Microsoft JhengHei UI;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.card-inner .card-img {
+    display: flex;
+    align-items: center;
+    height: 157px;
+}
+
+.align-left {
+    align-self: start;
+    font-family: Microsoft JhengHei UI;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.card-ul li {
+    list-style: disc;
+    width: 100%;
+    box-shadow: none;
+    display: list-item;
+    padding: 0px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* 表格 */
+
+.difftext {
+    margin: 0 auto;
+    font-family: Microsoft JhengHei UI;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 920px;
+    margin: 0 auto 20px auto;
+}
+
+.table th,
+.table td {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 5px 0;
+}
+
+.table th {
+    font-family: Microsoft JhengHei UI;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+
+.table td {
+    font-family: Microsoft JhengHei UI;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+
+}
+
+.tableuniqtext {
+    color: #00CC99;
+    font-weight: 700;
+}
+
+/* 表單 */
+
+.formarea {
+    background: linear-gradient(#E4FFF8, #A2DDCE);
+}
+
+.formarea p {
+    font-family: Microsoft JhengHei UI;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.forminput {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.forminput label {
+    font-family: Microsoft JhengHei UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.forminput input {
+    padding: 10px;
+}
+
+#comment {
+    width: 350px;
+    height: 200px;
+}
+
+.comment {
+    margin-left: 20px;
+}
+
+.btn {
+    border-radius: 3px;
+    background-color: #00251A;
+    color: #FFFFFF;
+    padding: 10px 63px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: palevioletred;
+}
+
+.btn:active {
+    background-color: greenyellow;
+}
+
+/* 表尾 */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 50px;
+}
+
+.footer h1 a {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/homework-b5f67.appspot.com/o/hexschool-logo.png?alt=media&token=f70ed542-c2c2-4b2b-af5c-13ccacd26113);
+    width: 150px;
+    height: 36px;
+    display: block;
+    text-indent: 101%;
+    /* 首行縮排 */
+    overflow: hidden;
+    /* 隱藏超過範圍的文字 */
+    white-space: nowrap;
+    /* 不換行 */
+    background-repeat: no-repeat;
+}
+
+.contact {
+    font-family: verdana;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+.contact a {
+    color: #00CC99;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
